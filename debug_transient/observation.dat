@@ -1,0 +1,146 @@
+# Observation File: observation.dat column names:
+# -----------------------------------------------------------------------------
+# Observation Name: time [d]
+# -----------------------------------------------------------------------------
+# Observation Name: runoff generation [mol d^-1]
+# Region: surface outlet
+# Functional: extensive integral
+# Variable: surface-mass_flux
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: subsurface water content [mol]
+# Region: domain
+# Functional: extensive integral
+# Variable: water_content
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: surface water content [mol]
+# Region: surface domain
+# Functional: extensive integral
+# Variable: surface-water_content
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow water content [mol]
+# Region: surface domain
+# Functional: extensive integral
+# Variable: snow-water_content
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow depth [m]
+# Region: surface domain
+# Functional: average
+# Variable: snow-depth
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow density [kg/m^3]
+# Region: surface domain
+# Functional: average
+# Variable: snow-density
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: evapotranspiration [m d^-1]
+# Region: surface domain
+# Functional: average
+# Variable: surface-evaporative_flux
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: evaporation cumulation [m3/d]
+# Region: surface domain
+# Functional: integral
+# Variable: surface-evaporative_flux
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: surface-subsurface exchange cumulation [mol/d]
+# Region: surface domain
+# Functional: extensive integral
+# Variable: surface-surface_subsurface_flux
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snowmelt [m d^-1]
+# Region: surface domain
+# Functional: average
+# Variable: snow-melt
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snowmelt cumulation [m3/d]
+# Region: surface domain
+# Functional: integral
+# Variable: snow-melt
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow source [m3/d]
+# Region: surface domain
+# Functional: extensive integral
+# Variable: snow-source_sink
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: thaw depth [m]
+# Region: surface domain
+# Functional: average
+# Variable: surface-thaw_depth
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: water table depth [m]
+# Region: surface domain
+# Functional: average
+# Variable: surface-water_table_depth
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: surface temperature [K]
+# Region: surface domain
+# Functional: average
+# Variable: surface-temperature
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow temperature [K]
+# Region: surface domain
+# Functional: average
+# Variable: snow-temperature
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: air temperature [K]
+# Region: surface domain
+# Functional: average
+# Variable: surface-air_temperature
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: rain precipitation [m d^-1]
+# Region: surface domain
+# Functional: average
+# Variable: surface-precipitation_rain
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: rain cumulation [m3/d]
+# Region: surface domain
+# Functional: integral
+# Variable: surface-precipitation_rain
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow precipitation [m d^-1]
+# Region: surface domain
+# Functional: average
+# Variable: snow-precipitation
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: snow cumulation [m3SWE/d]
+# Region: surface domain
+# Functional: integral
+# Variable: snow-precipitation
+# Number of Vectors: 1
+# -----------------------------------------------------------------------------
+# Observation Name: relative humidity
+# Region: surface domain
+# Functional: average
+# Variable: surface-relative_humidity
+# Number of Vectors: 1
+# =============================================================================
+"time [d]" "runoff generation [mol d^-1]" "subsurface water content [mol]" "surface water content [mol]" "snow water content [mol]" "snow depth [m]" "snow density [kg/m^3]" "evapotranspiration [m d^-1]" "evaporation cumulation [m3/d]" "surface-subsurface exchange cumulation [mol/d]" "snowmelt [m d^-1]" "snowmelt cumulation [m3/d]" "snow source [m3/d]" "thaw depth [m]" "water table depth [m]" "surface temperature [K]" "snow temperature [K]" "air temperature [K]" "rain precipitation [m d^-1]" "rain cumulation [m3/d]" "snow precipitation [m d^-1]" "snow cumulation [m3SWE/d]" "relative humidity"
+0.000000000000e+00 0.000000000000e+00 8.398582406896e+05 0.000000000000e+00 2.218003662868e+02 4.000000000000e-02 1.000000000000e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 1.050000000000e+00 2.656544733103e+02 2.673851367559e+02 2.683167135880e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 8.274542094909e-01
+1.000000000000e+00 0.000000000000e+00 8.398582406894e+05 0.000000000000e+00 3.968299795896e+02 7.155122262664e-02 1.000000000000e+02 5.485423979707e-04 5.485423979707e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 3.155122253544e-03 0.000000000000e+00 1.050000000000e+00 2.665684386809e+02 2.659072317361e+02 2.669569868171e+02 0.000000000000e+00 0.000000000000e+00 3.703664651514e-03 3.703664651514e-03 7.835967303241e-01
+2.000000000000e+00 0.000000000000e+00 8.398582406889e+05 0.000000000000e+00 3.494122563431e+02 5.382783613522e-02 1.170333666689e+02 8.554693792537e-04 8.554693792537e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -8.554693792537e-04 0.000000000000e+00 1.050000000000e+00 2.669696194714e+02 2.656801811497e+02 2.675314236458e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 6.697426180556e-01
+3.000000000000e+00 0.000000000000e+00 8.398582406883e+05 0.000000000000e+00 2.106515282009e+02 2.822671123777e-02 1.345520466345e+02 2.501691171377e-03 2.501691171377e-03 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -2.501691171377e-03 0.000000000000e+00 1.050000000000e+00 2.668794997119e+02 2.646855520765e+02 2.660522037153e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 7.200227870370e-01
+4.000000000000e+00 0.000000000000e+00 8.398580557997e+05 0.000000000000e+00 9.889986177547e+01 1.208152119456e-02 1.479388102986e+02 2.013977221035e-03 2.013977221035e-03 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -2.010635891180e-03 0.000000000000e+00 1.050000000000e+00 2.593046292586e+02 2.575776617098e+02 2.585983966435e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 6.718708958333e-01
+5.000000000000e+00 0.000000000000e+00 8.398577981717e+05 0.000000000000e+00 5.609070278195e+01 6.380990316405e-03 1.589759993643e+02 7.775608648368e-04 7.775608648368e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -7.729015577485e-04 0.000000000000e+00 1.050000000000e+00 2.577366223809e+02 2.563425764157e+02 2.575636349537e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 6.545421967592e-01
+6.000000000000e+00 0.000000000000e+00 8.398574959420e+05 0.000000000000e+00 3.516746245781e+01 3.776917676556e-03 1.684678202963e+02 3.836035134403e-04 3.836035134403e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -3.781352327706e-04 0.000000000000e+00 1.050000000000e+00 2.569156169870e+02 2.554926821543e+02 2.570198491898e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 6.189307395833e-01
+7.000000000000e+00 0.000000000000e+00 8.398570516540e+05 0.000000000000e+00 2.457092632469e+01 2.515721156010e-03 1.768534808585e+02 1.994199065032e-04 1.994199065032e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -1.913750397182e-04 0.000000000000e+00 1.050000000000e+00 2.555212197285e+02 2.535607945172e+02 2.556453069444e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 4.606595208333e-01
+8.000000000000e+00 0.000000000000e+00 8.398566099203e+05 0.000000000000e+00 1.586991614549e+01 1.552585603150e-03 1.844019580996e+02 1.665897765843e-04 1.665897765843e-04 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 -1.586142168732e-04 0.000000000000e+00 1.050000000000e+00 2.642768712501e+02 2.633388213429e+02 2.653907313426e+02 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 0.000000000000e+00 6.840068483797e-01
