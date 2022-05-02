@@ -4,6 +4,9 @@ import numpy as np
 from datetime import datetime,timedelta
 import h5py
 import sys,os
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
 plt.ion()
 
 obs = pd.read_csv('../debug_transient/observation.dat',
@@ -22,7 +25,7 @@ with h5py.File('../debug_transient/ats_vis_surface_data.h5','r') as d:
     surf_area = d['surface-cell_volume.cell.0'][a_key][:].sum() # m^2
 
 # load data
-df = pandas.read_csv('../debug_transient/observation.dat', comment='#',sep=' ')
+df = pd.read_csv('../debug_transient/observation.dat', comment='#',sep=' ')
 
 # process
 time = df['time [d]']
