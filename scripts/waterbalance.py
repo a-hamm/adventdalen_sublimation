@@ -9,7 +9,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 plt.ion()
 
-obs = pd.read_csv('../debug_transient/observation.dat',
+df  = pd.read_csv('../02_transient/observation.dat',
                   sep = ' ', comment='#')
 sd = pd.read_csv('../data/snow_depth_airport.csv')
 sd['time'] = pd.to_datetime(sd['time'], format='%d.%m.%Y')
@@ -18,15 +18,12 @@ r = pd.date_range(start=pd.to_datetime(sd['time']).min(), end=pd.to_datetime(sd[
 sd = sd.set_index('time').reindex(r).fillna(np.nan).rename_axis('time').reset_index()
 
 plt.bar(sd.time, sd.snowdepth/100, alpha=0.5, color = 'grey', label = 'observed')
-plt.plot(sd.time, obs['snow depth [m]'], label = 'modeled')
+plt.plot(sd.time, df['snow depth [m]'], label = 'modeled')
 plt.legend()
 
-with h5py.File('../debug_transient/ats_vis_surface_data.h5','r') as d:
+with h5py.File('../02_transient/ats_vis_surface_data.h5','r') as d:
     a_key = list(d['surface-cell_volume.cell.0'].keys())[0]
     surf_area = d['surface-cell_volume.cell.0'][a_key][:].sum() # m^2
-
-# load data
-df = pd.read_csv('../debug_transient/observation.dat', comment='#',sep=' ')
 
 # process
 time = df['time [d]']
