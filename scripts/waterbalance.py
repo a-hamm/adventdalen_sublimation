@@ -13,6 +13,7 @@ obs = pd.read_csv('../debug_transient/observation.dat',
                   sep = ' ', comment='#')
 sd = pd.read_csv('../data/snow_depth_airport.csv')
 sd['time'] = pd.to_datetime(sd['time'], format='%d.%m.%Y')
+sd = sd[sd.time.dt.year < 2021]
 r = pd.date_range(start=pd.to_datetime(sd['time']).min(), end=pd.to_datetime(sd['time']).max())
 sd = sd.set_index('time').reindex(r).fillna(np.nan).rename_axis('time').reset_index()
 
