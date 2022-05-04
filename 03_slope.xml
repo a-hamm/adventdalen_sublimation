@@ -1,7 +1,7 @@
 <ParameterList name="Main" type="ParameterList">
   <ParameterList name="mesh" type="ParameterList">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="build columns from set" type="string" value="surface face" /> 
+      <Parameter name="build columns from set" type="string" value="surface" /> 
       <Parameter name="mesh type" type="string" value="read mesh file" />
       <ParameterList name="read mesh file parameters" type="ParameterList">
         <Parameter name="file" type="string" value="../data/slope_medium_highRes.exo" />
@@ -11,7 +11,7 @@
     <ParameterList name="surface" type="ParameterList">
       <Parameter name="mesh type" type="string" value="surface" />
       <ParameterList name="surface parameters" type="ParameterList">
-        <Parameter name="surface sideset name" type="string" value="surface face" />
+        <Parameter name="surface sideset name" type="string" value="surface" />
       </ParameterList>
     </ParameterList>
     <ParameterList name="snow" type="ParameterList">
@@ -120,8 +120,8 @@
   <ParameterList name="cycle driver" type="ParameterList">
     <Parameter name="start time" type="double" value=" 0" />
     <Parameter name="start time units" type="string" value="d" />
-    <Parameter name="end time" type="double" value="100" />
-    <Parameter name="end time units" type="string" value="noleap" />
+    <Parameter name="end time" type="double" value="10" />
+    <Parameter name="end time units" type="string" value="d" />
     <ParameterList name="required times" type="ParameterList">
       <Parameter name="times start period stop" type="Array(double)" value="{ 0, 1,-1}" />
       <Parameter name="times start period stop units" type="string" value="d" />
@@ -911,7 +911,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS_periods.h5" />
+                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="incoming shortwave radiation [W m^-2]" />
               </ParameterList>
@@ -951,7 +951,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS_periods.h5" />
+                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="air temperature [K]" />
               </ParameterList>
@@ -968,7 +968,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS_periods.h5" />
+                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="relative humidity [-]" />
               </ParameterList>
@@ -985,7 +985,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS_periods.h5" />
+                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="wind speed [m s^-1]" />
               </ParameterList>
@@ -1036,7 +1036,7 @@
             <Parameter name="component" type="string" value="cell" />
             <ParameterList name="function" type="ParameterList">
               <ParameterList name="function-tabular" type="ParameterList">
-                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS_periods.h5" />
+                <Parameter name="file" type="string" value="../data/spinup200yr_adv_AWS.h5" />
                 <Parameter name="x header" type="string" value="time [s]" />
                 <Parameter name="y header" type="string" value="incoming longwave radiation [W m^-2]" />
               </ParameterList>
