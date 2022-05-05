@@ -554,7 +554,7 @@
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
                   <Parameter name="y values" type="Array(double)" value="{0.0,1.0,0.0}" />
-                  <Parameter name="x values" type="Array(double)" value="{0.0,2522880000.0,2522966400.0}" />
+                  <Parameter name="x values" type="Array(double)" value="{0.0,86400.0,172800.0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>

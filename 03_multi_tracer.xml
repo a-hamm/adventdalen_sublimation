@@ -1,7 +1,7 @@
 <ParameterList name="Main" type="ParameterList">
   <ParameterList name="mesh" type="ParameterList">
     <ParameterList name="domain" type="ParameterList">
-      <Parameter name="build columns from set" type="string" value="surface" /> 
+      <Parameter name="build columns from set" type="string" value="surface" />
       <Parameter name="mesh type" type="string" value="read mesh file" />
       <ParameterList name="read mesh file parameters" type="ParameterList">
         <Parameter name="file" type="string" value="../data/slope_medium_highRes.exo" />
@@ -506,13 +506,13 @@
       <Parameter name="molar_density_key" type="string" value="molar_density_liquid" />
       <Parameter name="component names" type="Array(string)" value="{tracer,tracer2}" />
       <Parameter name="component molar masses" type="Array(double)" value="{1, 1}" />
-      <Parameter name="spatial discretization order" type="int" value="2" />
+      <Parameter name="spatial discretization order" type="int" value="1" />
       <Parameter name="temporal discretization order" type="int" value="1" />
       <Parameter name="cfl" type="double" value=" 1" />
       <Parameter name="flow mode" type="string" value="transient" />
       <Parameter name="solver" type="string" value="PCG with Hypre AMG" />
       <Parameter name="transport subcycling" type="bool" value="false" />
-      <Parameter name="number of aqueous components" type="int" value="2" />
+      <Parameter name="number of aqueous components" type="int" value="1" />
       <Parameter name="number of gaseous components" type="int" value="0" />
       <Parameter name="runtime diagnostics: regions" type="Array(string)" value="{}" />
       <ParameterList name="reconstruction">
@@ -554,13 +554,14 @@
               <ParameterList name="dof 1 function">
                 <ParameterList name="function-tabular">
                   <Parameter name="y values" type="Array(double)" value="{0.0,1.0,0.0}" />
-                  <Parameter name="x values" type="Array(double)" value="{0.0,2522880000.0,2522966400.0}" />
+                  <Parameter name="x values" type="Array(double)" value="{0.0,86400.0,172800.0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
+              </ParameterList>
               <ParameterList name="dof 2 function">
                 <ParameterList name="function-tabular">
                   <Parameter name="y values" type="Array(double)" value="{0.0,1.0,0.0}" />
-                  <Parameter name="x values" type="Array(double)" value="{0.0,2522880000.0,2522966400.0}" />
+                  <Parameter name="x values" type="Array(double)" value="{0.0,172800.0,259200.0}" />
                   <Parameter name="forms" type="Array(string)" value="{constant, constant}" />
                 </ParameterList>
               </ParameterList>
@@ -595,7 +596,7 @@
       <Parameter name="molar_density key" type="string" value="surface-molar_density_liquid" />
       <Parameter name="porosity key" type="string" value="surface-fake_porosity" />
       <Parameter name="component names" type="Array(string)" value="{tracer,tracer2}" />
-      <Parameter name="number of liquid components" type="int" value="1" />
+      <Parameter name="number of liquid components" type="int" value="2" />
       <Parameter name="component molar masses" type="Array(double)" value="{ 1}" />
       <Parameter name="spatial discretization order" type="int" value="1" />
       <Parameter name="temporal discretization order" type="int" value="1" />
