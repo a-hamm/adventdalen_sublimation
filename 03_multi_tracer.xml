@@ -507,7 +507,7 @@
       <Parameter name="component names" type="Array(string)" value="{tracer,tracer2}" />
       <Parameter name="component molar masses" type="Array(double)" value="{1, 1}" />
       <Parameter name="spatial discretization order" type="int" value="1" />
-      <Parameter name="temporal discretization order" type="int" value="1" />
+      <Parameter name="temporal discretization order" type="int" value="1" /> <!-- advection scheme, should be 2? -->
       <Parameter name="cfl" type="double" value=" 1" />
       <Parameter name="flow mode" type="string" value="transient" />
       <Parameter name="solver" type="string" value="PCG with Hypre AMG" />
